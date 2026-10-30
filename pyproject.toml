@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "depth-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented per-pixel distance prediction against Python source"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+depth-claim-audit = "depth_claim_audit.__main__:main"
+
+[tool.setuptools]
+packages = ["depth_claim_audit"]
